@@ -59,10 +59,8 @@ sudo make install
 cd ~/
 sudo rm -rf ~/.gpac ~/gpac/
 git clone https://github.com/gpac/gpac.git
-cd gpac/applications/dashcast
-vim controler.c
-make
-cd ../../
+cd gpac
+vim applications/dashcast/controler.c
 ./configure --disable-ffmpeg-versions
 make
 sudo make install
