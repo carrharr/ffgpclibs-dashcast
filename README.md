@@ -6,11 +6,7 @@ in Ubuntu 16.04 and in order to do that youll need [Its explained for ultra dumm
 # THIS HASNT BEEN PROPERLY TESTED, SO RUN AT YOUR OWN RISK!!!!!
 # This does not install everything nicely!! ONLY FOR DASHCAST LIVE!!!
 
-+ Run the Script `./script.sh`, (preferably from and within home directory)
-+ When it gets to line 64 it will open a file with vim 
-+ DO `:/if (!audio_data_conf)`and return. It'll look for the line we want 
-+ Comment out that line pressing `i` and then `//`
-+ Get out, save (Press escape then `:wq`and return )and let script continue till it echoes done.
++ Just run the Script `./script.sh`, (preferably from and within home directory)
 + Hopefully everything will be working fine (y).
 
 
