@@ -1,17 +1,17 @@
 #!/bin/bash
 
 #Remove any existing packages:
-sudo apt-get -y remove ffmpeg x264 libav-tools libvpx-dev libx264-dev gpac
+yes | sudo apt-get -y remove ffmpeg x264 libav-tools libvpx-dev libx264-dev gpac
 
 # Get the dependencies:
 sudo apt-get update
-sudo apt-get -y install build-essential checkinstall git vim libfaac-dev libgpac-dev \
+yes | sudo apt-get -y install build-essential checkinstall git vim libfaac-dev libgpac-dev \
   libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev librtmp-dev libtheora-dev \
     libvorbis-dev pkg-config texi2html yasm zlib1g-dev libswscale-dev libavresample-dev \
 	libxv-dev libavdevice-dev
 
 # Install x264
-sudo apt-get -y install libx264-dev
+yes | sudo apt-get -y install libx264-dev
 cd
 git clone git://git.videolan.org/git/x264.git x264
 cd x264
