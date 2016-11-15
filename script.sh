@@ -61,8 +61,7 @@ cd ~/
 sudo rm -rf ~/.gpac ~/gpac/
 git clone https://github.com/gpac/gpac.git
 cd gpac
-sed -i -e 's|if\ (!audio_data_conf)|//if\ (!audio_data_conf)|g' applications/dashcast/controller.c
-./configure --disable-ffmpeg-versions
+./configure 
 make
 sudo make install
 sudo make install-lib
